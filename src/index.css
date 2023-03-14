@@ -1,13 +1,157 @@
-body {
+/* RESET */
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* VARIABLES */
+
+:root {
+ --BC: rgb(63, 142, 202);
+ --FC: aliceblue;
+ --FF: Verdana, Geneva, Tahoma, sans-serif;
+ --BLACK: black;
+}
+
+/* MAIN */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100%;
+  max-width: 900px;
+  border: 1px solid var(--BLACK);
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--FC);
+  background-color: var(--BC);
+  height: 100px;
+  font-size: 30px;
+  font-family: var(--FF);
+  box-shadow: 0px 5px 5px 0px var(--BLACK);
+}
+
+h1 {
+  text-shadow: 3px 3px var(--BLACK);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: var(--BC);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  color: var(--FC);
+  font-family: var(--FF);
+  text-shadow: 1.5px 1.5px var(--BLACK);
+}
+
+.addForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input[type='number'] {
+  margin-top: 10px;
+  outline: none;
+  height: 30px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid var(--BC);
+  padding: 5px;
+  font-size: 20px;
+  box-shadow: 1px 1px var(--BLACK);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+label {
+  margin-top: 10px;
+  font-family: var(--FF);
+  font-weight: 550;
+  color: var(--BC);
+}
+
+.addForm > button {
+  cursor: pointer;
+  margin-top: 10px;
+  border: 1px solid var(--BLACK);
+  background-color: var(--BC);
+  border-radius: 5px;
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
+  font-family: var(--FF);
+  color: var(--FC);
+  border: none;
+}
+
+.addForm > button:hover,
+.addForm > button:focus {
+  opacity: 0.9;
+  transition: all 0.5s;
+}
+
+.bmi-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.bmi-result {
+  margin-top: 10px;
+  height: 100px;
+  width: 100px;
+  border: 6px solid grey;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  font-family: var(--FF);
+  color: var(--BC);
+  font-weight: 600;
+}
+
+.bmi-info {
+  margin-top: 10px;
+  display: grid;
+  place-content: center;
+  font-size: 30px;
+  color: var(--BC);
+  font-family: var(--FF);
+}
+
+span {
+   color: var(--BC);
+   margin-bottom: 50px;
+   font-size: 20px;
+   text-align: center;
+   font-weight: 550;
 }
