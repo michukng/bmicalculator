@@ -146,6 +146,7 @@ label {
   font-size: 30px;
   color: var(--BC);
   font-family: var(--FF);
+  height: 40px;
 }
 
 span {

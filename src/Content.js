@@ -13,7 +13,6 @@ const Content = ({ height, handleChangeHeight, weight, handleChangeWeight, handl
                     type="number"
                     required
                     inputMode="numeric"
-                    pattern="[100-300]{3}"
                     value={height}
                     onChange={(e) => handleChangeHeight(e.target.value)}
                 />

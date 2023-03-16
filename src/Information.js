@@ -6,4 +6,5 @@ const Information = ({ info }) => {
     )
 }
 
+
 export default Information;
